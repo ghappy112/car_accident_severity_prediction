@@ -75,7 +75,7 @@ def predict():
     X = [temp, wind_chill, pres, vis, wind_spd, precip, day, night]
     
     #ml prediction
-    prediction = (modelA.predict([X]))[0] 
+    prediction = (model.predict([X]))[0] 
     prediction = str(prediction)
     
     return '''
