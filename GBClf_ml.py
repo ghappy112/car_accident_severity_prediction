@@ -54,6 +54,7 @@ tree = GradientBoostingClassifier()
 # train & test tree
 tree.fit(X_train, y_train)
 print("gradient boosted tree score:", tree.score(X_test, y_test))
+from collections import Counter
 print("Predictions:", Counter(tree.predict(X_test)))
 
 
