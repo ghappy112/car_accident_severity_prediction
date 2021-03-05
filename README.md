@@ -4,7 +4,7 @@
 Predict the severity of traffic delays that would be caused by potential car accidents. This could be useful to anyone who wants to know about possible delays in traffic, such as commuters, or city officials who are trying to expect or reduce traffic delays.
 
 2) Data ingestion:
-The flask app pulls weather data from weather bit to make predictions in real time:
+The flask app pulls weather data from weather bit's API to make predictions in real time:
 https://www.weatherbit.io/
 
 3) Visualizations:
