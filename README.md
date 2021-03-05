@@ -13,8 +13,8 @@ https://github.com/ghappy112/car_accident_severity_prediction/blob/main/data_vis
 
 4) A demonstration of at least one of the following: 
   
-  a. Machine learning 
-  
+  a. Machine learning:
+  https://github.com/ghappy112/car_accident_severity_prediction/blob/main/GBClf_ml.py
   
   b. Distributed computing 
   
