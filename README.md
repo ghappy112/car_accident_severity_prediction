@@ -17,9 +17,7 @@ https://github.com/ghappy112/car_accident_severity_prediction/blob/main/data_vis
   a. Machine learning:
   https://github.com/ghappy112/car_accident_severity_prediction/blob/main/GBClf_ml.py
   
-  b. Distributed computing 
-  
-  c. An interactive website:
+  b. An interactive website:
   https://github.com/ghappy112/car_accident_severity_prediction/blob/main/flask_app.py
 
 5) A deliverable:
