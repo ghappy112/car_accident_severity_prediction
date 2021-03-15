@@ -59,6 +59,9 @@ def predictor():
         city = data.get('city')
         state = data.get('state')
         country = data.get('country')
+        city = city.strip()
+        state = state.strip()
+        country = country.strip()
         state = state.upper()
         country = country.upper()
         if country == "USA" or country == "U.S." or country == "U.S.A.":
