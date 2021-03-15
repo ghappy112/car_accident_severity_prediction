@@ -5,9 +5,13 @@ import requests
 from sklearn.ensemble import GradientBoostingClassifier
 from sklearn import metrics
 import joblib
+import sys
 
 app = Flask(__name__)
-#model = joblib.load(r"TheTreeOfSeverity.pkl")
+try:
+    model = joblib.load(r"TheTreeOfSeverity.pkl")
+except Exception as e:
+    print(e)
     
 @app.route('/', methods=['GET', 'POST'])
 def home():
