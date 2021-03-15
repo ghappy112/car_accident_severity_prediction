@@ -18,7 +18,7 @@ https://github.com/ghappy112/car_accident_severity_prediction/blob/main/data_vis
   https://github.com/ghappy112/car_accident_severity_prediction/blob/main/GBClf_ml.py
   
   b. An interactive website:
-  https://github.com/ghappy112/car_accident_severity_prediction/blob/main/flask_app.py
+  https://github.com/ghappy112/car_accident_severity_prediction/blob/main/app.py
 
 5) A deliverable:
-https://github.com/ghappy112/car_accident_severity_prediction/blob/main/flask_app.py
+https://github.com/ghappy112/car_accident_severity_prediction/blob/main/app.py
