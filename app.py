@@ -21,14 +21,14 @@ def home():
         usercity = data.get('city')
         userstate = data.get('state')
         usercountry = data.get('country')
-        return redirect(url_for("/prediction", city=usercity, state=userstate, country=usercountry))
+        return redirect(url_for("/predictor", city=usercity, state=userstate, country=usercountry))
     else:
         return '''
             <html>
                 <body style="background-color:CornflowerBlue;">
                     <h1 style="color:white;">Car Accident Severity Classifer</h1>
                     <h1 style="color:white;">Estimate the traffic delay severity from car accidents using local weather conditions and machine learning</h1>
-                    <form style="color:white;" action="/predict" method=POST>
+                    <form style="color:white;" action="/predictor" method=POST>
                         <label for="city">Your city:</label><br>
                         <input type="text" id="city" name="city"><br><br>
                         <label for="state">Your state/province's abbreviations:</label><br>
