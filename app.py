@@ -7,10 +7,7 @@ from sklearn import metrics
 import joblib
 
 app = Flask(__name__)
-try:
-    model = joblib.load(r"TheTreeOfSeverity.pkl")
-except Exception as e: 
-    stdout.write(e)
+model = joblib.load(r"TheTreeOfSeverity.pkl")
     
 @app.route('/', methods=['GET', 'POST'])
 def home():
