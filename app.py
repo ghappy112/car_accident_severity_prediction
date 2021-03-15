@@ -6,7 +6,7 @@ from sklearn.ensemble import GradientBoostingClassifier
 from sklearn import metrics
 import joblib
 app = Flask(__name__)
-model = joblib.load(r"car_accident_severity_prediction/TheTreeOfSeverity.pkl")
+model = joblib.load("TheTreeOfSeverity.pkl")
 
 @app.route('/', methods=['GET', 'POST'])
 def home():
