@@ -9,7 +9,7 @@ import sys
 
 # logging helper
 def p(*args):
-  print args[0] % (len(args) > 1 and args[1:] or [])
+  print(args[0] % (len(args) > 1 and args[1:] or []))
   sys.stdout.flush()
 
 app = Flask(__name__)
