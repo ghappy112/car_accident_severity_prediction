@@ -4,9 +4,9 @@ import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
-import joblib
+import dill
 
-# load dataset
+# load datasetll
 df = pd.read_csv(r"US_Accidents_June20.csv", usecols=["Severity", "Temperature(F)", "Wind_Chill(F)", "Pressure(in)", "Visibility(mi)", "Wind_Speed(mph)", "Precipitation(in)", "Sunrise_Sunset"])
 
 # view dataset
@@ -65,4 +65,4 @@ print("gradient boosted tree score:", tree.score(X, y))
 print("Predictions:", Counter(tree.predict(X)))
 
 # save the tree
-# joblib.dump(tree, r"TheTreeOfSeverity.pkl", compress = 1)
+dill.dump(tree, open(r'traffic_tree.pkd', 'wb'))
