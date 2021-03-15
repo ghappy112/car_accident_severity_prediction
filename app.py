@@ -25,8 +25,8 @@ def home():
     elif mc2 != 0:
         return '''
             <html>
-                <body>
-                    <h1>''' + str(mc2) + '''</h1>
+                <body style="background-color:CornflowerBlue;">
+                    <h1 style="color:white;">''' + str(mc2) + '''</h1>
                 </body>
             </html>
         '''
@@ -110,8 +110,8 @@ def predictor():
         gohome = et
         return '''
             <html>
-                <body>
-                    <h1>''' + str(gohome) + '''</h1>
+                <body style="background-color:CornflowerBlue;">
+                    <h1 style="color:white;">''' + str(gohome) + '''</h1>
                 </body>
             </html>
         '''
