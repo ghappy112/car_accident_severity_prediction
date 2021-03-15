@@ -23,7 +23,7 @@ def home():
         userstate = data.get('state')
         usercountry = data.get('country')
         return redirect(url_for("/predictor", city=usercity, state=userstate, country=usercountry))
-    if mc2 != 0:
+    elif mc2 != 0:
         return '''
             <html>
                 <body>
