@@ -52,7 +52,6 @@ def home():
 @app.route('/predictor', methods=['GET', 'POST'])
 def predictor():
     
-    gohome = 0
     try:
         #get user input
         data = request.form
