@@ -4,14 +4,12 @@ from flask import Flask, request, redirect, url_for, request, render_template
 import requests
 from sklearn.ensemble import GradientBoostingClassifier
 from sklearn import metrics
-#import joblib
 import dill
 import sys
 
 app = Flask(__name__)
 mc2 = 0
 try:
-    #model = joblib.load(r"TheTreeOfSeverity.pkl")
     model = dill.load(open(r'traffic_tree.pkd', 'rb'))
 except Exception as e:
     mc2 = e
