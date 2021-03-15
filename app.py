@@ -5,7 +5,6 @@ import requests
 from sklearn.ensemble import GradientBoostingClassifier
 from sklearn import metrics
 import dill
-import sys
 
 app = Flask(__name__)
 mc2 = 0
