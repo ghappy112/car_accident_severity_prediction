@@ -68,7 +68,7 @@ def predictor():
             country = "US"
 
         #get weather data from weatherbit
-        Key = "You can create a key for free at weatherbit.io. If you want my key, please message me on slack."
+        Key = "3e59ee9ecb284a02a87674232146875a"
         url = "https://api.weatherbit.io/v2.0/current?city=" + city + "&state=" + state + "&country=" + country + "&key=" + Key + "&include=minutely"
         r = requests.get(url, auth=('user', 'pass'))
         weather_data = r.json()
