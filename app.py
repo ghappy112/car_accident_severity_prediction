@@ -11,7 +11,13 @@ app = Flask(__name__)
 try:
     model = joblib.load(r"TheTreeOfSeverity.pkl")
 except Exception as e:
-    print(e)
+    return '''
+    <html>
+        <body>
+            <h1>''' + e + '''</h1>
+        </body>
+    </html>
+    '''
     
 @app.route('/', methods=['GET', 'POST'])
 def home():
