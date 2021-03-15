@@ -8,16 +8,11 @@ import joblib
 import sys
 
 app = Flask(__name__)
+e = 0
 try:
     model = joblib.load(r"TheTreeOfSeverity.pkl")
 except Exception as e:
-    return '''
-    <html>
-        <body>
-            <h1>''' + e + '''</h1>
-        </body>
-    </html>
-    '''
+    print(e)
     
 @app.route('/', methods=['GET', 'POST'])
 def home():
@@ -28,6 +23,14 @@ def home():
         userstate = data.get('state')
         usercountry = data.get('country')
         return redirect(url_for("/predictor", city=usercity, state=userstate, country=usercountry))
+    if e != 0:
+        return '''
+            <html>
+                <body>
+                    <h1>''' + e + '''</h1>
+                </body>
+            </html>
+        '''
     else:
         return '''
             <html>
