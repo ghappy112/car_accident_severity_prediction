@@ -36,8 +36,8 @@ def home():
             </html>
         '''
     
-@app.route('/predict', methods=['GET', 'POST'])
-def predict():
+@app.route('/predictor', methods=['GET', 'POST'])
+def predictor():
 
     #get user input
     data = request.form
