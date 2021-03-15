@@ -4,6 +4,7 @@ import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
+import joblib
 
 # load dataset
 df = pd.read_csv(r"US_Accidents_June20.csv", usecols=["Severity", "Temperature(F)", "Wind_Chill(F)", "Pressure(in)", "Visibility(mi)", "Wind_Speed(mph)", "Precipitation(in)", "Sunrise_Sunset"])
