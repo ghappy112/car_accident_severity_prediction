@@ -21,7 +21,7 @@ def home():
         usercity = data.get('city')
         userstate = data.get('state')
         usercountry = data.get('country')
-        return redirect(url_for("/predict", city=usercity, state=userstate, country=usercountry))
+        return redirect(url_for("/prediction", city=usercity, state=userstate, country=usercountry))
     else:
         return '''
             <html>
