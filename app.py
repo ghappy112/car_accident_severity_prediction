@@ -1,3 +1,4 @@
+# Copyright 2021, Gregory Happ, All rights reserved.
 # flask application
 
 from flask import Flask, request, redirect, url_for, request, render_template
