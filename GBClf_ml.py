@@ -1,3 +1,4 @@
+# Copyright 2021, Gregory Happ, All rights reserved.
 # Severity Classifier
 
 import numpy as np
